@@ -1,5 +1,5 @@
 # mad229.github.io
-<!index html>
+<!index.html>
 <html>
 <body>
 <h1>Hello World</h1>
