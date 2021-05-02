@@ -4,28 +4,43 @@
   <title>Michael Adams, Cartography</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="w3.css">
 </head>
 <body>
+  <body {
+  background-color: #1f2833;
+}
+
+h1 {
+  background-color: #1f2833;
+}
+
+div {
+  background-color: #1f2833;
+}
+
+span {
+  background-color: #f18973;
+}
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-indigo w3-opacitymin w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>Michael</b> Adams</a>
+  <div class="w3-bar w3-C5C6C7 w3-opacitymin w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-66FCF1 w3-button"style= "color:#66FCF1"><b>Michael</b> Adams</a>
     <!-- Float links to the right. -->
     <div class="w3-right">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#about" class="w3-bar-item w3-#66FCF1 w3-button"style= "color:#66FCF1">About</a>
+      <a href="#projects" class="w3-bar-item w3-button" style= "color:#66FCF1">Projects</a>
+      <a href="#contact" class="w3-bar-item w3-#66FCF1 w3-button"style= "color:#66FCF1">Contact</a>
     </div>
   </div>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1200px;" id="home">
-  <img class="w3-image" src="images/KentuckyHills.jpg" alt="Architecture" width="1200" height="587">
+  <img class="w3-image" src="images/KentuckyHills.jpg" alt="Kentucky Hills" width="1200" height="587">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Your</b></span> <span class="w3-hide-small w3-text-light-grey">Name</span></h1>
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Michael</b></span> <span class="w3-hide-small w3-text-light-grey">Adams</span></h1>
   </div>
 </header>
 
@@ -40,15 +55,29 @@ h3 {
 }
 </style>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
+    <p>This website shows a portfolio of my work during my time at the University of Kentucky and is spread across multiple classes.
     </p>
   </div>
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
   </div>
+
+
+            </div><!--.wrap-->
+        </div><!--#header-->
+
+        <div id="main">
+            <div class="wrap">
+
+                <div id="primary">
+                    <div id="content" role="main">
+                        <p>Cartographic work</p>
+                    </div><!-- #content -->
+                </div><!-- #primary -->
+
+            </div><!--.wrap-->
+        </div><!--#main-->
 
   <div class="w3-row-padding">
     <div class="w3-col l4 m4 w3-margin-bottom"> <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
@@ -60,10 +89,12 @@ h3 {
     </a> <!-- end link -->
     </div>
     <div class="w3-col l4 m4 w3-margin-bottom">
+      <a href="Covid19.html" class="w3-hover-grayscale">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="images/project.jpg" alt="House" style="width:100%">
+        <div class="w3-display-topleft w3-black w3-padding">Covid 19 Vaccine distribution</div>
+        <img src="images/Covid 19 Vaccine distribution0.png" alt="Covid 19 Vaccine Distribution" style="width:100%">
       </div>
+    </a>
     </div>
     <div class="w3-col l4 m4 w3-margin-bottom">
       <div class="w3-display-container">
@@ -126,7 +157,7 @@ h3 {
     <h1>Michael Adams Resume</h1>
 
 
-    <iframe src="Michael Adams Resume.pdf" width="100%" height="500px">
+    <iframe src="Michael Adams Resume no pers.pdf" width="100%" height="500px">
     </iframe>
 
 
@@ -137,7 +168,13 @@ h3 {
 
 <!-- Image  -->
 <div class="w3-container">
-  <img src="images/torii.png" class="w3-image" style="width:50%">
+  <img src="images/torii.png" class="w3-image" class= "center" style="width:50%">
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </div>
 
 <!-- End page content -->
