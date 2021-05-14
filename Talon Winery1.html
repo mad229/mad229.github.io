@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michael Adams, Cartography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+</head
+<body>
+  <body {
+    <head>
+  <style>
+  body {
+    background-color:#1f2833;
+  }
+  </style>
+  </head>>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar style= "color:#1F2833" w3-opacitymin w3-wide w3-padding-top w3-card">
+    <a href="#home" class="w3-bar-item w3-button style= "color:#66FCF1""><b style= "color:#66FCF1">Michael</b> Adams</a style= "color:#66FCF1">
+    <!-- Float links to the right. -->
+    <div class="w3-right">
+      <a href="#about" class="w3-bar-item w3-button"style= "color:#66FCF1">About</a>
+      <a href="#projects" class="w3-bar-item w3-button"style= "color:#66FCF1">Projects</a>
+      <a href="#contact" class="w3-bar-item w3-button"style= "color:#66FCF1">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Display a map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='map'></div>
+
+  <script>
+    // 💡💡💡 Change this to your Token --------------------
+    // ------------------------------------------------
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFkMjI5IiwiYSI6ImNra2JpZ2FyajA1MzkycHFzZXlxaGdmZ2UifQ.ulEjCg5xiC5ZmZ7tbvx4ag';
+    // ------------------------------------------------
+    // ------------------------------------------------
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+
+      // 💡💡💡 Change this to your style --------------------
+      // ------------------------------------------------
+      style: 'mapbox://styles/mad229/ckohuh5x91gsm17rffb34g46t',
+      // ----------------------------------------------
+      // ------------------------------------------------
+
+      // 💡💡💡 Change to your location ----------------------
+      // ------------------------------------------------
+      // zoom: 17.39,
+      // center: [-84.444754, 37.909609],
+      // pitch: 0,
+      // bearing: 0
+      // ------------------------------------------------
+      // ----------------------------------------------
+
+    });
+
+    // Add geolocate control to the map.
+    map.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
+  </script>
+
+</body>
+
+</html>
+
+
+<!-- Begin page content -->
+<div class="w3-content w3-padding" style="max-width:1256px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <style>
+h3 {
+  font-family: Avenir, arial, verdana;
+}
+</style>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style= "color:#66FCF1">About</h3>
+    <p style= "color:#66FCF1">This map is a lidar image showing Talon Winery in Lexington Kentucky. The utilization of lidar and ArcGis Pro brings the winery to life.
+    </p>
+  </div>
+
+<div class="w3-container">
+    <img src="images/torii.png" class="w3-image" class= "w3-display-middle" class= "w3-small style="width:100%">
+</div>
+
+<div class= w3-display-bottom style= "color:#66FCF1">
+  <a href="KYArches.html" class="previous">&laquo; Previous</a>
+  <a href="KY Hillshade GIF.html" class="next">Next &raquo;</a>
+
+  <a href="index.html" class="previous round">&#8249;</a>
+  <a href="KY Hillshade GIF.html" class="next round">&#8250;</a>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
