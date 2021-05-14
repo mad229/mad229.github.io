@@ -31,11 +31,76 @@
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-padding w3-wide" style="max-width:1200px;" id="home">
-  <img class="w3-image" src="images/Under Construction.png" alt="OK Hillshade" width="1200" height="587">
-  <div class="w3-display-middle w3-margin-top w3-center">
-  </div>
-</header>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Display a map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='map'></div>
+
+  <script>
+    // 💡💡💡 Change this to your Token --------------------
+    // ------------------------------------------------
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFkMjI5IiwiYSI6ImNra2JpZ2FyajA1MzkycHFzZXlxaGdmZ2UifQ.ulEjCg5xiC5ZmZ7tbvx4ag';
+    // ------------------------------------------------
+    // ------------------------------------------------
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+
+      // 💡💡💡 Change this to your style --------------------
+      // ------------------------------------------------
+      style: 'mapbox://styles/mad229/ckohuh5x91gsm17rffb34g46t',
+      // ----------------------------------------------
+      // ------------------------------------------------
+
+      // 💡💡💡 Change to your location ----------------------
+      // ------------------------------------------------
+      // zoom: 17.39,
+      // center: [-84.444754, 37.909609],
+      // pitch: 0,
+      // bearing: 0
+      // ------------------------------------------------
+      // ----------------------------------------------
+
+    });
+
+    // Add geolocate control to the map.
+    map.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
+  </script>
+
+</body>
+
+</html>
+
 
 <!-- Begin page content -->
 <div class="w3-content w3-padding" style="max-width:1256px">
